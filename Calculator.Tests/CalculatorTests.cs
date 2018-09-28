@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace Calculator.Tests
 {
     [TestFixture]
-    public class TestClass
+    public class CalculatorTests
     {
         [Test]
         public void TestMethod()
         {
             // TODO: Add your test code here
-            Assert.Pass("Your first passing test");
+            Assert.Fail("Need to implement");
         }
     }
 }
