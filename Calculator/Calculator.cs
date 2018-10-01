@@ -1,31 +1,25 @@
 ﻿using System;
-using System.Reflection.Metadata.Ecma335;
 
 namespace CalculatorNS
 {
     public class Calculator
     {
-        /// <summary>
-        /// Default constructor for the Calculator
-        /// </summary>
+
         public Calculator()
         {
-
+            // Intentionally empty
         }
 
         /// <summary>
-        /// Perform the calculation required by the user
+        /// Take the input string and process the instructions, returning the result
+        /// of the calculation.
         /// </summary>
-        /// <param name="input">The string representation of the user
-        /// specified calculation</param>
+        /// <param name="input">A string representing the instructions to
+        /// process.</param>
         /// <returns>The result of the calculation</returns>
         public double Calculate(string input)
         {
             return 0;
         }
-
-
     }
-
-
 }
