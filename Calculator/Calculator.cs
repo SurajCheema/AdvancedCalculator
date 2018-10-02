@@ -17,9 +17,10 @@ namespace CalculatorNS
         /// <param name="input">A string representing the instructions to
         /// process.</param>
         /// <returns>The result of the calculation</returns>
-        public double Calculate(string input)
+        public decimal Calculate(string input)
         {
             return 0;
+            
         }
     }
 }

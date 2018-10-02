@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using CalculatorNS;
 
 namespace Calculator.Tests
@@ -142,6 +143,20 @@ namespace Calculator.Tests
             string input = "20 / 2 * 1";
             int expectedResult = 10;
             Assert.Fail("Need to implement");
+        }
+
+        /// <summary>
+        /// Test that the correct exception is thrown when a sum attempts to divide
+        /// by zero.
+        /// </summary>
+        [Test]
+        public void TestDivideByZero()
+        {
+            string input = "30 / 0";
+            var ex = Assert.Throws<DivideByZeroException>(
+                () => _uut.Calculate(input)
+                );
+            Assert.IsTrue(ex.Message.Contains("My divide by zero message"));
         }
 
     }
